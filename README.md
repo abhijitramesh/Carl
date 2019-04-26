@@ -24,7 +24,7 @@ Object oriented programing is used for expressing real-world objects in programm
 
 ## What is Inheritance ?
 
-Inheritance is the property by which a class or an object can accuire all the properties of the Parent class or object.
+Inheritance is the property by which a class or an object can acquires all the properties of the Parent class or object.
 
 ## What is Polymorphism ?
 
