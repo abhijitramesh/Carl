@@ -62,6 +62,13 @@ example: actionPerformed()
 
 Variable names should always start with small letters. There should not be any special characters while naming a variable.
 Naming a variable as x,y,z is not recommended it is better to use something like name, address etc....
+if it is a constant make all variables to uppercase ex: PASSWORD = null;
+
+## Basic conditions
+After if and else conditions there should be a space
+Removing unused  imports and unsed classes and unused variables and blank spaces
+after "," there should be space
+After "=" there should be space
 
 ## Packages
 
