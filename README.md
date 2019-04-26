@@ -58,7 +58,18 @@ While naming Methods it should always start with small letter.
 It should alwaus be a verb.If it contains more than one world the starting of the second word could be Capitalized.
 example: actionPerformed()
 
-## 
+## Variables
+
+Variable names should always start with small letters. There should not be any special characters while naming a variable.
+Naming a variable as x,y,z is not recommended it is better to use something like name, address etc....
+
+## Packages
+
+Pacakage names should be lowercase words and each word should be seperated by a dot(.).
+
+## Constants
+
+Constants should be named in all caps, example PI. If there are more than one word it is recommended to use and _ to seperate them example THE_VALUE_OF_PI.
 
 
 
