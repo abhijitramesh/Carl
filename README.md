@@ -2,6 +2,8 @@
 Carl is a hedgehog. Yes that is it, Carl is a hedgehog for more information on Carl contact https://github.com/vaishnav04
 But instead if you want to know more Java Keep Reading and Enjoy :smiley:
 
+![Carl](/Images/Carl.jpg)
+
 # Introduction
 
 ## What is object oriented programming
