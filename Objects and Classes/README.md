@@ -62,29 +62,113 @@ Then we are creating a new __object__ of the __class__ Hedgehog here memory will
 
 Then we are accessing the member variables of the object and printing these values.
 
+In the above example we have used the main method inside a class but we can also do it outside the class for example of view [this](https://github.com/abhijitramesh/Carl/blob/master/Objects%20and%20Classes/Bank.java)
+
+# Initialising Objects
+
+Objects can be initialised in three ways
+
+* using reference variables
+* using methods
+* using constructors
+
+## Using reference variables 
+[source code](https://github.com/abhijitramesh/Carl/blob/master/Objects%20and%20Classes/Shop.java)
+
+```  java
+
+class Carlmart{
+int productId;
+String itemName;
+} 
+
+public class Shop{
+    public static void main(String args[]){
+
+    Carlmart shopObject = new Carlmart();
+
+    shopObject.productId = 5;
+    shopObject.itemName = "Choclate";
+    System.out.println("The id of "+shopObject.itemName+" is "+shopObject.productId);
+
+
+}
+}
+
+```
+Here we are initialising the value of the Object by calling it inside the Shop class and calling the variables by their reference
+``` .productId``` and  ``` .itemName ```
+
+## Using methods
+[source code](https://github.com/abhijitramesh/Carl/blob/master/Objects%20and%20Classes/Classroom.java)
+
+#### *Side note :* What is a method ?
+
+A method can be thought of as a sub progream that can be run inside a another program. Now you might have a question what the difference between a method and a function is that a method is used to do operations on a object while a fuction can be used to pass data and may or may not return a data. 
+
+``` java
+class Student{
+    int rollNo;
+    String Name;
+
+    void setValues(int x,String y){
+        rollNo = x;
+        Name = y;
+    }
+    void display(){
+        System.out.println("Name "+Name+" Roll no "+rollNo);
+    }
+}
 
 
 
+class Classroom{
+public static void main(String args[]){
+    Student studentObject = new Student();
+
+    studentObject.setValues(1,"Carl");
+    studentObject.display();
+
+}
+}
+```
+
+Here I have first delcared a method called setValues which takes two arguments an integer and another String this method will set the values of the instance variables.
+
+The next method (``` display() ```) is used for printing the values of the variables.
 
 
+## Using Constructors
+
+[source code](https://github.com/abhijitramesh/Carl/blob/master/Objects%20and%20Classes/Office.java)
+
+#### What is a Constructor 
+A constructor is used to initialise an objects state. A constructor does not have a return type and aways the Constructor name is same as that of the Class. A Constructor can never be abstract,final,static and Synchronized.
 
 
+``` java
+class Employee{
+
+    int id;
+    String name;
+    Employee(){
+        id = 1;
+        name = "Carl";
+    }
+}
 
 
+class Office{
 
+    public static void main(String args[]){
 
+        Employee employeeObject = new Employee();
 
+        System.out.println("Employee name is "+employeeObject.name+" with id "+employeeObject.id);
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
+```
 
 
 
