@@ -8,9 +8,9 @@ class CarlBank{
 
 public class Bank{
 public static void main(String args[]){
-    CarlBank b1 = new CarlBank();
+    CarlBank bankObject = new CarlBank();
 
-    System.out.println(b1.customerId);
+    System.out.println(bankObject.customerId);
 
 }
 
