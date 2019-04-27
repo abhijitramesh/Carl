@@ -54,13 +54,15 @@ class Hedgehog{ // Class named Hedgehog
 ```
 Here the class name is Hedgehog
 
-I have declared two instance variables int id and String name. These variables are called instance variables as they are declared inside the class but outside methods.No memory is allocated when we are declaring instance variables inside classes.
+I have declared two __instance variables__ int id and String name. These variables are called __instance variables__ as they are declared inside the class but outside methods. No memory is allocated when we are declaring __instance variables__ inside classes.
 
 The main method is declared inside the Hedgehog class.
 
-Then we are creating a new object of the class Hedgehog here memory will be allocated as we are using the *new* keyword. In fact the *new* keyword is used for assigning memory for the object.
+Then we are creating a new __object__ of the __class__ Hedgehog here memory will be allocated as we are using the *new* keyword. In fact the *new* keyword is used for assigning memory for the object.
 
 Then we are accessing the member variables of the object and printing these values.
+
+
 
 
 
