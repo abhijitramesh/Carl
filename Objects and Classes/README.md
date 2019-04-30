@@ -249,18 +249,62 @@ class Calculation{
 
 Here I have first created an object using the *new* keyword after which I have created the same object using an anonymous object.
 
+# Creating multiple Objects In one Line
+
+It is not necessary that we have to create objects in different lines. if we want to create more obejcts of the same class then we can create them in one line itself.
+
+### Example 
+[source code](https://github.com/abhijitramesh/Carl/blob/master/Objects%20and%20Classes/Cube.java)
+
+``` java
+class Properties{
+    double side;
+
+    void insertSide(int a){
+        side = a ;
+    }
+
+    void calculateSurfaceArea(){
+        System.out.println(6*side*side);
+    }
+
+    void calculateVolume(){
+        System.out.println(side*side);
+    }
+    void calculateFaceDiaglonal(){
+        System.out.println(1.414*side);
+    }
+    void calculateSpaceDialonal(){
+        System.out.println(1.732*side);
+    
+    }
+    }
 
 
+class Cube{
 
+    public static void main(String args[]){
+    Properties cubeobject1 = new Properties(), cubeobject2 = new Properties();
 
+    cubeobject1.insertSide(3);
+    cubeobject2.insertSide(4);
 
+    System.out.println("Properties for First Cube are");
+    cubeobject1.calculateVolume();
+    cubeobject1.calculateSurfaceArea();
+    cubeobject1.calculateFaceDiaglonal();
+    cubeobject1.calculateSpaceDialonal();
 
+    System.out.println("Properties for Second Cube are");
+    cubeobject2.calculateVolume();
+    cubeobject2.calculateSurfaceArea();
+    cubeobject2.calculateFaceDiaglonal();
+    cubeobject2.calculateSpaceDialonal();
 
+    }
+}
+```
 
-
-
-
-
-
+Here I am using creating two objects from one class using the (,) operator
 
 
