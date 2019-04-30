@@ -170,6 +170,87 @@ class Office{
 
 ```
 
+Here I have made a constructor ``` Employee()``` which initialises the value of the id to 1 and name to "Carl".
+
+# Sample Program using Objects and Classes 
+
+[source code](https://github.com/abhijitramesh/Carl/blob/master/Objects%20and%20Classes/Library.java)
+
+``` java 
+class Book{
+
+    int bookId;
+    String bookName;
+    String authorName;
+
+    void insert(int x,String s1,String s2){
+        bookId = x;
+        bookName = s1;
+        authorName = s2;
+    }
+
+    void display(){
+        System.out.println(bookId+" "+bookName+" "+authorName);
+    }
+}
+
+public class Library{
+
+    public static void main(String args[]){
+
+        Book bookObject = new Book();
+        Book bookObject1 = new Book();
+        Book bookObject2 = new Book();
+
+        bookObject.insert(1,"The Lost Symbol","Dan Brown");
+        bookObject.display();
+        bookObject1.insert(2,"And then there were none","Agatha Christie");
+        bookObject1.display();
+        bookObject2.insert(3,"The monk who sold his ferrari","Robin Sharma");
+        bookObject2.display();
+    }
+}
+``` 
+Here I have given a sample program that gives simple idea of Obejcts and Classes. I have first created a class Book that has instance variables bookId, bookName and authorName. Then I have created a method insert which takes in three arguments and sets the values for Instance varibales of the object. The next method ``` display() ``` is used for printing the values of the instance variables.
+
+The next class I have created is called Library this contains the main method which has three new book objects bookObject, bookObject1 and bookObject2. Then I have then inserted the datas into the three of them followed by displaying them.
+
+
+# Anonymous Objects
+
+If we need to use an object only once we do not have to use the *new* keyword to call it all the time we can insted use an anon ymous object to create the object and call it. 
+
+## Example program to demonstrate Anonymous Object
+[source code](https://github.com/abhijitramesh/Carl/blob/master/Objects%20and%20Classes/Calculation.java)
+
+``` java 
+class fact{
+
+void doFactorial(int n){
+        int fact =1;
+        for(int i=1;i<=n;i++){
+            fact = fact*i;
+        }
+        System.out.println(fact);
+        }
+    }
+class Calculation{
+    public static void main(String args[]){
+
+        fact factobject = new fact();
+
+        factobject.doFactorial(3);
+
+        new fact().doFactorial(3);   
+    }
+}
+
+```
+
+Here I have first created an object using the *new* keyword after which I have created the same object using an anonymous object.
+
+
+
 
 
 
