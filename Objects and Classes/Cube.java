@@ -1,4 +1,4 @@
-class properties{
+class Properties{
     double side;
 
     void insertSide(int a){
@@ -22,10 +22,10 @@ class properties{
     }
 
 
-class cube{
+class Cube{
 
     public static void main(String args[]){
-    properties cubeobject1 = new properties(), cubeobject2 = new properties();
+    Properties cubeobject1 = new Properties(), cubeobject2 = new Properties();
 
     cubeobject1.insertSide(3);
     cubeobject2.insertSide(4);
